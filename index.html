@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <nav>
+                <span class="left"><logo>SUBHAM</logo></span>
+                <span class="right">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Projects</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="#"><li>Login</li></a>
+                        
+                    </ul>
+                </span>
+            </nav>
+            <div class="first_left">
+                <img src="pngegg.png" alt="">
+            </div>
+            <div class="first_right">
+                Hi, my name is <span class="col">SUBHAM</span><br><span id="element"></span><br><br> Welcome to my Portfolio
+            </div>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['I am a Web Developer.', '&amp; Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

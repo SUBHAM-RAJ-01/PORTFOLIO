@@ -11,28 +11,152 @@
 <body>
     <div class="main">
         <div class="first">
-            <nav>
+            <nav id="navlist">
                 <span class="left"><logo>SUBHAM</logo></span>
                 <span class="right">
                     <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Projects</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>Login</li></a>
+                        <a href="#home" class="nav"><li>Home</li></a>
+                        <a href="#about" class="nav"><li>About</li></a>
+                        <a href="#project" class="nav"><li>Projects</li></a>
+                        <a href="#contact" class="nav"><li>Contact</li></a>
+                        <!-- <a href="#"><li>Login</li></a> -->
                         
                     </ul>
                 </span>
             </nav>
-            <div class="first_left">
-                <img src="pngegg.png" alt="">
+            <a name="home">
+                <div class="first_main">
+                    <div class="first_left">
+                        <img src="dev2.png" alt="">
+                    </div>
+                    <div class="first_right">
+                        <div class="text">
+                            Hi, my name is <span class="col">SUBHAM</span><br><span id="element"></span><br><br> Welcome to my Portfolio
+                        </div>
+                        <span class="button"><a href="ITINIARY.pdf" download><button class="cv">Download Resume</button></a><button class="contact">Contact Details</button></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a name="about">
+            <div class="second">
+                <div class="second_left">
+                    <p class="text">About Me</p>
+                    <p class="about">Greetings, Subham Raj! I'm an engineering enthusiast currently pursuing electronics and communication engineering at RVCE Bengaluru. Beyond the classroom, I delve into the realm of web development, armed with proficiency in HTML, CSS,
+                        JavaScript, Figma, and a solid understanding of the basics of React. This dual passion for engineering and web development enables me to navigate the convergence of hardware and software, creating a well-rounded skill set for the
+                        evolving tech landscape.</p>
+                    <div class="socials">
+                        <ul class="social">
+                            <a href="https://www.instagram.com/someone_u_know011?igsh=MXdsOHVicnZ3aTlpNQ==">
+                                <li>
+                                    <ion-icon name="logo-instagram" class="social_logo"></ion-icon>
+                                </li>
+                            </a>
+                            <a href="https://github.com/SUBHAM-RAJ-01">
+                                <li>
+                                    <ion-icon name="logo-github" class="social_logo"></ion-icon>
+                                </li>
+                            </a>
+                            <a href="https://x.com/subhamr456?t=aE6V5JZCvY0RYFLWuAc5OQ&s=08">
+                                <li>
+                                    <ion-icon name="logo-twitter" class="social_logo"></ion-icon>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li></li>
+                                <ion-icon name="logo-linkedin" class="social_logo"></ion-icon>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="second_right"><img src="dev.png" alt=""></div>
+
             </div>
-            <div class="first_right">
-                Hi, my name is <span class="col">SUBHAM</span><br><span id="element"></span><br><br> Welcome to my Portfolio
+
+            <div class="skills">
+                <p class="skills">My Skills</p>
+                <ul class="skill">
+                    <li class="skill1"><img src="html.png" class="s_logo"></li>
+                    <li class="skill"><img src="css.png" class="s_logo"></li>
+                    <li class="skill"><img src="javascript.png" class="s_logo"></li>
+                    <li class="skill"><img src="react.png" class="s_logo"></li>
+                    <li class="skill"><img src="c.png" class="s_logo"></li>
+                </ul>
             </div>
+        </a>
+        <a name="project">
+            <div class="project">
+                <p class="project">My Projects</p>
+            </div>
+        </a>
+        <a name="contact"></a>
+        <div class="contact">
+            <p class="contact">Contact Me</p>
+            <form>
+                <label for="name" class="form">NAME&nbsp;</label><input type="text" class="input" placeholder="Enter your Name" size="45"><br>
+                <label for="email" class="form">EMAIL</label><input type="email" class="input" required placeholder="Enter your email" size="45"><br><br>
+                <textarea name="message" id="message" class="input" cols="58" rows="4" placeholder="Enter your message"></textarea><br>
+                <div class="btn"><button onclick="send()" id="send" class="send">Submit</button></div>
+            </form>
+        </div>
+        </a>
+        <footer>
+            <div class="f_left">
+                <ul>
+                    <a href="#" class="f_link">
+                        <li class="first_list">Home</li>
+                    </a>
+                    <a href="#" class="f_link">
+                        <li>About</li>
+                    </a>
+                    <a href="#" class="f_link">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#" class="f_link">
+                        <li>Contact</li>
+                    </a>
+                    <!-- <a href="#"><li>Login</li></a> -->
+
+                </ul>
+            </div>
+            <div class="f_right">
+                <div class="socials_two">
+                    <ul class="social_two">
+                        <a href="https://www.instagram.com/someone_u_know011?igsh=MXdsOHVicnZ3aTlpNQ==">
+                            <li>
+                                <ion-icon name="logo-instagram" class="social_logo_two"></ion-icon>
+                            </li>
+                        </a>
+                        <a href="https://github.com/SUBHAM-RAJ-01">
+                            <li>
+                                <ion-icon name="logo-github" class="social_logo_two"></ion-icon>
+                            </li>
+                        </a>
+                        <a href="https://x.com/subhamr456?t=aE6V5JZCvY0RYFLWuAc5OQ&s=08">
+                            <li>
+                                <ion-icon name="logo-twitter" class="social_logo_two"></ion-icon>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                            <ion-icon name="logo-linkedin" class="social_logo_two"></ion-icon>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </footer>
+        <div class="copyright">
+            <p class="copyright">Copyright 2024 &copy; SUBHAM RAJ, All rights Reserved</p>
         </div>
 
     </div>
+
+
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -40,6 +164,24 @@
             typeSpeed: 50,
         });
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navlist = document.getElementById("navlist");
+        var sticky = navlist.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navlist.classList.add("sticky")
+            } else {
+                navlist.classList.remove("sticky");
+            }
+        }
+    </script> -->
 </body>
 
 </html>

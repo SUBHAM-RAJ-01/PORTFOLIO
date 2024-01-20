@@ -363,6 +363,7 @@
         display: flex;
         margin-left: 21px;
         padding-bottom: 30px;
+        list-style: none;
     }
     .social_logo_two {
         font-size: 35px;

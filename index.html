@@ -10,11 +10,12 @@
 
 <body>
     <div class="main">
+
         <div class="first">
             <nav id="navlist">
                 <span class="left"><logo>SUBHAM</logo></span>
                 <span class="right">
-                    <ul>
+                    <ul class="nav_menu">
                         <a href="#home" class="nav"><li>Home</li></a>
                         <a href="#about" class="nav"><li>About</li></a>
                         <a href="#project" class="nav"><li>Projects</li></a>
@@ -22,6 +23,12 @@
                         <!-- <a href="#"><li>Login</li></a> -->
                         
                     </ul>
+                    
+                </span>
+                <span class="hamburger">
+                        <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
                 </span>
             </nav>
             <a name="home">
@@ -83,19 +90,34 @@
                     <li class="skill"><img src="react.png" class="s_logo"></li>
                     <li class="skill"><img src="c.png" class="s_logo"></li>
                 </ul>
+
             </div>
         </a>
         <a name="project">
             <div class="project">
                 <p class="project">My Projects</p>
+                <ul class="project">
+                    <li class="project">
+                        <section class="p1">PROJECT 1</section>
+                    </li>
+                    <li class="project">
+                        <section class="p1">PROJECT 2</section>
+                    </li>
+                    <li class="project">
+                        <section class="p1">PROJECT 3</section>
+                    </li>
+                </ul>
+                <div class="view_more"><button class="view">View More &#8595;</button></div>
             </div>
         </a>
         <a name="contact"></a>
         <div class="contact">
             <p class="contact">Contact Me</p>
             <form>
-                <label for="name" class="form">NAME&nbsp;</label><input type="text" class="input" placeholder="Enter your Name" size="45"><br>
-                <label for="email" class="form">EMAIL</label><input type="email" class="input" required placeholder="Enter your email" size="45"><br><br>
+                <!-- <label for="name" class="form">NAME&nbsp;</label> -->
+                <input type="text" class="input" placeholder="Enter your Name" size="45"><br>
+                <!-- <label for="email" class="form">EMAIL</label> -->
+                <input type="email" class="input" required placeholder="Enter your email" size="45"><br><br>
                 <textarea name="message" id="message" class="input" cols="58" rows="4" placeholder="Enter your message"></textarea><br>
                 <div class="btn"><button onclick="send()" id="send" class="send">Submit</button></div>
             </form>
@@ -104,16 +126,16 @@
         <footer>
             <div class="f_left">
                 <ul>
-                    <a href="#" class="f_link">
+                    <a href="#home" class="f_link">
                         <li class="first_list">Home</li>
                     </a>
-                    <a href="#" class="f_link">
+                    <a href="#about" class="f_link">
                         <li>About</li>
                     </a>
-                    <a href="#" class="f_link">
+                    <a href="#project" class="f_link">
                         <li>Projects</li>
                     </a>
-                    <a href="#" class="f_link">
+                    <a href="#contact" class="f_link">
                         <li>Contact</li>
                     </a>
                     <!-- <a href="#"><li>Login</li></a> -->
@@ -182,6 +204,19 @@
             }
         }
     </script> -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav_menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            hamburger.classList.remove("active");
+        }))
+    </script>
+
 </body>
 
 </html>

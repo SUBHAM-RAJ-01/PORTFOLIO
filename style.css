@@ -187,7 +187,7 @@
         height: 800px;
         width: 100%;
         filter: contrast(1.30);
-        overflow: hidden;
+        overflow: scroll;
     }
     p.skills {
         font-family: Montserrat;
@@ -360,10 +360,10 @@
         padding: 10px;
     }
     ul.social_two {
+        list-style: none;
         display: flex;
         margin-left: 21px;
         padding-bottom: 30px;
-        list-style: none;
     }
     .social_logo_two {
         font-size: 35px;
@@ -448,12 +448,31 @@ width: 100%; */
         text-decoration: none;
         font-family: sans-serif;
         font-weight: 600;
-        padding: 10px 20px;
+        padding: 10px 0px;
         font-size: 18px;
         position: sticky;
         top: 0;
         letter-spacing: 1px;
         cursor: pointer;
+        margin-left: 35px;
+    }
+    .nav::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: violet;
+        border-radius: 3px;
+        transform: scaleX(0);
+        transition: all 0.6s ease;
+        bottom: 0;
+        left: 0;
+    }
+    .nav:hover::before {
+        transform: scaleX(1);
+    }
+    .nav:hover {
+        color: #cc208e;
     }
     div.first_main {
         height: 600px;
@@ -470,12 +489,12 @@ width: 100%; */
         float: left;
         text-shadow: 1px 1px black;
     }
-    ul a.nav:hover {
+    /* ul a.nav:hover {
         transition: 0.5s;
         color: violet;
         text-decoration: underline;
         text-underline-offset: 1rem;
-    }
+    } */
     div.first_left {
         float: left;
         overflow: hidden;

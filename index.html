@@ -40,11 +40,13 @@
                     <div class="text">
                         Hi, my name is <span class="col">SUBHAM</span><br><span id="element"></span><br><br> Welcome to my Portfolio
                     </div>
-                    <span class="button"><a href="ITINIARY.pdf" download><button class="cv">Download Resume</button></a><a href="mailto:srajpatna45@gmail.com"><button class="contact">Contact</button></a></span>
+                    <span class="button"><a href="ITINIARY.pdf" download><button class="cv">Download Resume</button></a><a href="mailto:srajpatna45@gmail.com"><button class="contact">Contact Details</button></a></span>
                 </div>
             </div>
         </a>
+        <a href="#home"><button class="top">&#11161;</button></a>
     </div>
+
     <a name="about">
         <div class="second">
             <div class="second_left">
@@ -70,8 +72,9 @@
                             </li>
                         </a>
                         <a href="https://in.linkedin.com/in/subham-raj-5a1a402ab">
-                            <li></li>
-                            <ion-icon name="logo-linkedin" class="social_logo"></ion-icon>
+                            <li>
+                                <ion-icon name="logo-linkedin" class="social_logo"></ion-icon>
+                            </li>
                         </a>
 
                     </ul>
@@ -94,7 +97,7 @@
         </div>
     </a>
     <a name="project">
-        <div class="project">
+        <div class="project" id="project">
             <p class="project">My Projects</p>
             <ul class="project">
                 <li class="project">
@@ -107,7 +110,7 @@
                     <section class="p1">PROJECT 3</section>
                 </li>
             </ul>
-            <div class="view_more"><button class="view">View More &#8595;</button></div>
+            <div class="view_more"><button class="view" id="view" onclick="view()">View More &#8595;</button></div>
         </div>
     </a>
     <a name="contact"></a>
@@ -187,7 +190,22 @@
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <script>
+        var projectDiv = document.getElementById("project");
 
+        function view() {
+            var currentHeight = projectDiv.clientHeight;
+
+            if (currentHeight === 800) {
+                // If the height is 800px, set it back to its original height (you can adjust this value)
+                projectDiv.style.height = "initial";
+            } else {
+                // If the height is not 800px, set it to 800px
+              
+            }  projectDiv.style.height = "1100px";
+            
+        }
+    </script> -->
 </body>
 
 </html>
